@@ -7,21 +7,21 @@ export default function SideBarSocial() {
         <a
           href="https://x.com/WillyanCosta"
           target="_blank"
-          rel="noopener noreferrer"
+          className="hover:text-green-400 transition"
         >
           <FaXTwitter />
         </a>
         <a
           href="https://www.instagram.com/willyan.cr/"
           target="_blank"
-          rel="noopener noreferrer"
+          className="hover:text-green-400 transition"
         >
           <FaInstagram />
         </a>
         <a
           href="https://github.com/willyancr"
           target="_blank"
-          rel="noopener noreferrer"
+          className="hover:text-green-400 transition"
         >
           <FaGithub />
         </a>
