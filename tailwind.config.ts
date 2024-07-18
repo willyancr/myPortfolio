@@ -17,7 +17,7 @@ const config: Config = {
       fontFamily: {
         mono: ['var(--font-plex-mono)', 'monospace'],
         monoton: ['var(--font-monoton)', 'cursive'],
-        poppins: ['var(--font-plex-poppins)', 'sans-serif'],
+        rubik: ['var(--font-rubik)', 'sans-serif'],
       },
       boxShadow: {
         button: '0px 0px 68px 7px rgba(5, 150, 105, 0.4)',
