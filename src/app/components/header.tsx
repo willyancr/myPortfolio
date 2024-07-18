@@ -9,7 +9,7 @@ export default function HeaderPage() {
             <h1 className="text-5xl font-monoton ">W</h1>
           </Link>
         </div>
-        <div className="flex items-center gap-10 font-poppins ">
+        <div className="flex items-center gap-8 font-poppins ">
           <Link href="/sobre" className="hover:text-gray-100 transition">
             <span className="text-green-400">#</span>Sobre
           </Link>

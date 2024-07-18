@@ -1,9 +1,9 @@
-import SideBar from '@/app/components/sidebar/page';
+import SideBarSocial from '@/app/components/sidebar-social';
 
 export default function Page() {
   return (
     <main className="container flex">
-      <SideBar />
+      <SideBarSocial />
       <h1>teste</h1>
     </main>
   );

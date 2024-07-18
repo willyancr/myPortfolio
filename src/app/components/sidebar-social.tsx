@@ -1,6 +1,6 @@
 import { FaGithub, FaInstagram, FaXTwitter } from 'react-icons/fa6';
 
-export default function SideBar() {
+export default function SideBarSocial() {
   return (
     <div className="flex h-[740px]">
       <aside className="flex flex-col-reverse gap-6 min-w-16 sm:flex pl-3">

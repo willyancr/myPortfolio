@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { IBM_Plex_Mono, Inter, Monoton, Poppins } from 'next/font/google';
 import './globals.css';
-import HeaderPage from './components/header/page';
+import HeaderPage from './components/header/header';
 
 const inter = Inter({
   variable: '--font-inter',
