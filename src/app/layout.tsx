@@ -1,7 +1,6 @@
+import { IBM_Plex_Mono, Inter, Monoton, Rubik } from 'next/font/google';
 import type { Metadata } from 'next';
-import { IBM_Plex_Mono, Inter, Monoton, Poppins } from 'next/font/google';
 import './globals.css';
-import HeaderPage from './components/header/header';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -16,12 +15,13 @@ const monoton = Monoton({
 const plexMono = IBM_Plex_Mono({
   variable: '--font-plex-mono',
   subsets: ['latin'],
-  weight: ['400', '500'],
+  weight: ['400', '500', '700'],
 });
-const poppins = Poppins({
-  variable: '--font-plex-poppins',
+
+const rubik = Rubik({
+  variable: '--font-rubik',
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['700'],
 });
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} ${plexMono.variable} ${monoton.variable} ${poppins.variable}`}
+      className={`${inter.variable} ${plexMono.variable} ${monoton.variable} ${rubik.variable} `}
     >
       <body className={inter.className}>{children}</body>
     </html>
