@@ -1,8 +1,8 @@
 import SideBarSocial from '@/app/components/sidebar-social';
 
-export default function Page() {
+export default function HomePage() {
   return (
-    <main className="container flex">
+    <main className="container flex h-[600px]">
       <SideBarSocial />
       <div className="w-[472px] m-auto flex flex-col ">
         <div className="flex items-center">

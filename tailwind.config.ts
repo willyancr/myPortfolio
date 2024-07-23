@@ -14,6 +14,9 @@ const config: Config = {
       backgroundImage: {
         'hero-image': "url('/images/hero-bg.png')",
       },
+      backgroundColor: {
+        cards: '#1F2223',
+      },
       fontFamily: {
         mono: ['var(--font-plex-mono)', 'monospace'],
         monoton: ['var(--font-monoton)', 'cursive'],
