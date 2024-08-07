@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  body {
-    @apply bg-gray-900 text-gray-100
-  }
-} */
 body {
   background: rgb(14, 28, 23);
   background: radial-gradient(
@@ -19,21 +14,21 @@ body {
 .container {
   @apply mx-auto w-full max-w-[1200px] px-12;
 }
-
 .shadowCards:hover {
   box-shadow: 3px 3px 5px #6e6e6e, -3px -3px 5px #bfbfbf,
     5px 5px 15px rgba(74, 222, 128, 0.6), -5px -5px 15px rgba(74, 222, 128, 0.6);
 }
 
+/* scrollbar */
 *::-webkit-scrollbar {
   width: 8px;
 }
-
+/* cor de fundo do track */
 *::-webkit-scrollbar-track {
   background: #374151;
   border-radius: 5px;
 }
-
+/* cor de fundo do thumb */
 *::-webkit-scrollbar-thumb {
   background-color: #10b981;
   border-radius: 14px;

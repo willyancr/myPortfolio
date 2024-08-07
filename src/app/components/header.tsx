@@ -10,17 +10,17 @@ export default function HeaderPage() {
           </Link>
         </div>
         <div className="flex items-center gap-8 font-poppins ">
-          <Link href="/sobre" className="hover:text-gray-100 transition">
+          <Link href="/sobre" className="hover:text-gray-100 transition-all">
             <span className="text-green-400">#</span>
-            <span>Sobre</span>
+            Sobre
           </Link>
-          <Link href="/projetos" className="hover:text-gray-100 transition">
+          <Link href="/projetos" className="hover:text-gray-100 transition-all">
             <span className="text-green-400">#</span>
-            <span>Projetos</span>
+            Projetos
           </Link>
-          <Link href="/contato" className="hover:text-gray-100 transition">
+          <Link href="/contato" className="hover:text-gray-100 transition-all">
             <span className="text-green-400">#</span>
-            <span>Contato</span>
+            Contato
           </Link>
         </div>
       </nav>
