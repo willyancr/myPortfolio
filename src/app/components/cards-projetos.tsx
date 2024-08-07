@@ -1,5 +1,9 @@
 import Image from 'next/image';
-import { FaCircleChevronRight, FaGithub } from 'react-icons/fa6';
+import {
+  FaCircleChevronRight,
+  FaGithub,
+  FaArrowUpRightFromSquare,
+} from 'react-icons/fa6';
 import Badge from './badge';
 
 export default function Cards() {
@@ -7,14 +11,20 @@ export default function Cards() {
     <div className="flex flex-wrap gap-6 items-center justify-center">
       <div className="w-[287px] h-[420px] bg-cards rounded-3xl shadow-xl shadowCards transition duration-300 p-3">
         <div className="flex flex-col gap-2">
-          <Image
-            src="/page-tripplan.png"
-            alt="logo"
-            width={287}
-            height={300}
-            quality={100}
-            className="rounded-2xl h-[187px]"
-          />
+          <div className="relative">
+            <button>
+              <Image
+                src="/page-tripplan.png"
+                alt="imagem da aplicação Tripplan"
+                width={287}
+                height={300}
+                quality={100}
+                className="rounded-2xl h-[187px] "
+              />
+            </button>
+
+            <FaArrowUpRightFromSquare className="absolute bottom-4 left-3 text-zinc-200/30" />
+          </div>
           <span>Tripplan</span>
           <span className="text-sm text-gray-400">
             Uma aplicação web para organizar e centralizar todos os detalhes do
@@ -23,8 +33,8 @@ export default function Cards() {
           <div className="flex flex-wrap gap-1 text-xs mb-2">
             <Badge>React</Badge>
             <Badge>Next.js</Badge>
-            <Badge>TailwindCSS</Badge>
             <Badge>TypeScript</Badge>
+            <Badge>TailwindCSS</Badge>
             <Badge>Node.js</Badge>
             <Badge>Fastify</Badge>
             <Badge>Prisma</Badge>
