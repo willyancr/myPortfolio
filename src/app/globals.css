@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+.bgbody {
   background: rgb(14, 28, 23);
   background: radial-gradient(
     circle,
@@ -15,8 +15,11 @@ body {
   @apply mx-auto w-full max-w-[1200px] px-12;
 }
 .shadowCards:hover {
-  box-shadow: 3px 3px 5px #6e6e6e, -3px -3px 5px #bfbfbf,
-    5px 5px 15px rgba(74, 222, 128, 0.6), -5px -5px 15px rgba(74, 222, 128, 0.6);
+  box-shadow:
+    3px 3px 5px #6e6e6e,
+    -3px -3px 5px #bfbfbf,
+    5px 5px 15px rgba(74, 222, 128, 0.6),
+    -5px -5px 15px rgba(74, 222, 128, 0.6);
 }
 
 /* scrollbar */
