@@ -1,27 +1,27 @@
-import Link from 'next/link';
+import Redirect from "./redirect";
 
 export default function HeaderPage() {
   return (
-    <header className="py-6 text-gray-300 font-mono">
+    <header className="py-6 font-mono text-gray-300">
       <nav className="container flex items-center justify-between">
         <div>
-          <Link href="/">
-            <h1 className="text-5xl font-monoton ">W</h1>
-          </Link>
+          <Redirect href="/">
+            <h1 className="font-monoton text-5xl">W</h1>
+          </Redirect>
         </div>
-        <div className="flex items-center gap-8 font-poppins ">
-          <Link href="/sobre" className="hover:text-gray-100 transition-all">
+        <div className="font-poppins flex items-center gap-8">
+          <Redirect href="/sobre">
             <span className="text-green-400">#</span>
             Sobre
-          </Link>
-          <Link href="/projetos" className="hover:text-gray-100 transition-all">
+          </Redirect>
+          <Redirect href="/projetos">
             <span className="text-green-400">#</span>
             Projetos
-          </Link>
-          <Link href="/contato" className="hover:text-gray-100 transition-all">
+          </Redirect>
+          <Redirect href="/contato">
             <span className="text-green-400">#</span>
             Contato
-          </Link>
+          </Redirect>
         </div>
       </nav>
     </header>
