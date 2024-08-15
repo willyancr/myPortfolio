@@ -1,4 +1,5 @@
 import Badge from "@/app/components/badge";
+import Button from "@/app/components/button";
 import { Metadata } from "next";
 import Image from "next/image";
 import { FaDownload, FaPaperPlane } from "react-icons/fa6";
@@ -7,9 +8,9 @@ export const metadata: Metadata = {
   title: "Sobre",
 };
 
-export default function SobrePage() {
+export default function About() {
   return (
-    <div className="container mb-6 space-y-10 md:space-y-20">
+    <div className="container space-y-10 pb-24 pt-10 md:space-y-20">
       <h1 className="font-mono text-4xl">
         <span className="text-green-400">#</span>
         Sobre
@@ -42,14 +43,14 @@ export default function SobrePage() {
             <Badge>CSS3</Badge>
           </div>
           <div className="flex flex-col gap-2 md:flex-row md:gap-3">
-            <button className="flex items-center justify-center gap-2 rounded-md bg-green-400 p-4 transition-all hover:brightness-75 md:my-6 md:w-[225px]">
+            <Button>
               <p className="text-zinc-950">Entrar em contato </p>
               <FaPaperPlane className="size-4 text-zinc-900" />
-            </button>
-            <button className="flex items-center justify-center gap-2 rounded-md bg-green-400 p-4 transition-all hover:brightness-75 md:my-6 md:w-[225px]">
+            </Button>
+            <Button>
               <p className="text-zinc-950">Download C.V </p>
               <FaDownload className="size-4 text-zinc-900" />
-            </button>
+            </Button>
           </div>
         </div>
         <div>

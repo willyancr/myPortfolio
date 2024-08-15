@@ -5,14 +5,17 @@ export const metadata: Metadata = {
   title: "Projetos",
 };
 
-export default function ProjetosPage() {
+export default function Project() {
   return (
-    <div className="container mb-6 space-y-8">
+    <div className="container space-y-20 pt-10 pb-20">
       <h1 className="font-mono text-4xl">
         <span className="text-green-400">#</span>
         Projetos
       </h1>
-      <div className="flex flex-wrap items-center justify-center gap-6">
+      <div className="flex flex-wrap items-center  gap-10">
+        <CardsProjetos />
+        <CardsProjetos />
+        <CardsProjetos />
         <CardsProjetos />
         <CardsProjetos />
         <CardsProjetos />

@@ -42,7 +42,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${inter.variable} ${plexMono.variable} ${monoton.variable} ${rubik.variable} `}
     >
-      <body className={inter.className}>{children}</body>
+      <body className="bgbody">{children}</body>
     </html>
   );
 }

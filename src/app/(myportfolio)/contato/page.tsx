@@ -1,3 +1,4 @@
+import Button from "@/app/components/button";
 import { Metadata } from "next";
 import {
   FaGithub,
@@ -10,9 +11,9 @@ import {
 export const metadata: Metadata = {
   title: "Contato",
 };
-export default function ContatoPage() {
+export default function Contact() {
   return (
-    <div className="container mb-6 space-y-20">
+    <div className="container space-y-20 pt-10 pb-16">
       <h1 className="font-mono text-4xl">
         <span className="text-green-400">#</span>
         Contato
@@ -39,10 +40,10 @@ export default function ContatoPage() {
             placeholder="Mensagem"
             className="m-auto h-40 w-full resize-none rounded-md bg-cards p-4 shadow-2xl outline-none md:w-[450px]"
           />
-          <button className="m-auto my-6 flex w-full items-center justify-center gap-2 rounded-md bg-green-400 p-4 hover:brightness-75 md:w-[225px]">
+          <Button className="m-auto my-6 shadow-none">
             <p className="text-zinc-950">Enviar mensagem</p>
             <FaPaperPlane className="size-4 text-zinc-900" />
-          </button>
+          </Button>
           <div className="m-auto w-full border-b border-zinc-600/50 md:w-[450px]" />
 
           <span>Redes Sociais</span>

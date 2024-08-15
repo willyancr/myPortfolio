@@ -7,7 +7,7 @@ import {
 
 export default function SideBarSocial() {
   return (
-    <div className="hidden sm:flex sm:h-[740px]">
+    <div className="hidden sm:flex sm:h-[800px]">
       <aside className="flex min-w-16 flex-col-reverse gap-6 pl-3 sm:flex">
         <a
           href="https://x.com/WillyanCosta"
