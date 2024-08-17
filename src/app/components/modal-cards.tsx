@@ -8,7 +8,7 @@ interface Props {
 export default function ModalCards({ handleCloseModalCard }: Props) {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/70 text-zinc-300">
-      <div className="h-[580px] w-[380px] space-y-6 overflow-y-auto rounded-xl bg-cards px-6 py-5 text-left drop-shadow-2xl sm:mt-[80px] sm:h-[740px] sm:w-[740px]">
+      <div className="modalEffect h-[580px] w-[380px] space-y-6 overflow-y-auto rounded-xl bg-cards px-6 py-5 text-left drop-shadow-2xl sm:mt-[80px] sm:h-[740px] sm:w-[740px]">
         <div className="flex items-center justify-between">
           <span className="text-lg font-medium">Detalhes do projeto</span>
           <button onClick={handleCloseModalCard}>

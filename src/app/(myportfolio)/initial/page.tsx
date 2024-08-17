@@ -2,7 +2,7 @@ import SideBarSocial from "@/app/components/sidebar-social";
 
 export default function InitialSection() {
   return (
-    <div className="container flex">
+    <div id="initial" className="container flex">
       <SideBarSocial />
       <div className="m-auto flex w-full flex-col justify-center gap-2 md:h-screen md:w-[550px] md:gap-8">
         <div className="flex items-center">

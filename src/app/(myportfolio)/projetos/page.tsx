@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Project() {
   return (
-    <div className="container space-y-20 pt-10 pb-20">
+    <div id="projetos" className="container space-y-20 pt-28 pb-20">
       <h1 className="font-mono text-4xl">
         <span className="text-green-400">#</span>
         Projetos

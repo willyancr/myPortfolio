@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="container space-y-10 pb-24 pt-10 md:space-y-20">
+    <div id="sobre" className="container space-y-10 pb-24 pt-28 md:space-y-20">
       <h1 className="font-mono text-4xl">
         <span className="text-green-400">#</span>
         Sobre

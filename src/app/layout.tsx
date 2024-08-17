@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} ${plexMono.variable} ${monoton.variable} ${rubik.variable} `}
+      className={`${inter.variable} ${plexMono.variable} ${monoton.variable} ${rubik.variable} scroll-smooth `}
     >
       <body className="bgbody">{children}</body>
     </html>

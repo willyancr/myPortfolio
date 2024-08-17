@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 export default function Contact() {
   return (
-    <div className="container space-y-20 pt-10 pb-16">
+    <div id="contato" className="container space-y-20 pt-10 pb-16">
       <h1 className="font-mono text-4xl">
         <span className="text-green-400">#</span>
         Contato
