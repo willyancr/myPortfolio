@@ -8,7 +8,7 @@ export default function HeaderPage() {
         <Link href="#initial">
           <h1 className="font-monoton text-5xl">W</h1>
         </Link>
-        <div className="flex items-center font-mono text-sm sm:gap-6 sm:text-base">
+        <div className="flex items-center gap-3 font-mono text-sm sm:gap-6 sm:text-base">
           <Redirect href="#sobre">Sobre</Redirect>
           <Redirect href="#projetos">Projetos</Redirect>
           <Redirect href="#contato">Contato</Redirect>

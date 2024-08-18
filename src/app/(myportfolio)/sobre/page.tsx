@@ -1,8 +1,9 @@
-import Badge from "@/app/components/badge";
+import { FaDownload, FaPaperPlane } from "react-icons/fa6";
 import Button from "@/app/components/button";
+import Badge from "@/app/components/badge";
 import { Metadata } from "next";
 import Image from "next/image";
-import { FaDownload, FaPaperPlane } from "react-icons/fa6";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sobre",
@@ -43,10 +44,13 @@ export default function About() {
             <Badge>CSS3</Badge>
           </div>
           <div className="flex flex-col gap-2 md:flex-row md:gap-3">
-            <Button>
+            <Link
+              href="#contato"
+              className="flex items-center justify-center gap-2 rounded-md bg-green-400 p-4 shadow-button transition-all hover:brightness-75 md:my-6 md:w-[225px]"
+            >
               <p className="text-zinc-950">Entrar em contato </p>
               <FaPaperPlane className="size-4 text-zinc-900" />
-            </Button>
+            </Link>
             <Button>
               <p className="text-zinc-950">Download C.V </p>
               <FaDownload className="size-4 text-zinc-900" />
