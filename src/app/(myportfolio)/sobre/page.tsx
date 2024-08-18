@@ -4,12 +4,16 @@ import Badge from "@/app/components/badge";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { getPageData } from "@/app/lib/get-page-data";
+import { RichText } from "@/app/components/rich-text";
 
 export const metadata: Metadata = {
   title: "Sobre",
 };
 
-export default function About() {
+export default async function About() {
+  const { page: pageData } = await getPageData();
+
   return (
     <div id="sobre" className="container space-y-10 pb-24 pt-28 md:space-y-20">
       <h1 className="font-mono text-4xl">
@@ -17,31 +21,20 @@ export default function About() {
         Sobre
       </h1>
       <div className="flex flex-col-reverse items-center gap-6 md:flex-row md:justify-between md:gap-0">
-        <div className="flex w-full flex-col md:w-[500px]">
+        <div className="flex w-full flex-col gap-6 md:w-[500px]">
           <div>
             <span className="font-mono text-green-400">Olá, meu nome é </span>
             <h2 className="font-rubik text-4xl">Willyan Costa</h2>
           </div>
-          <span className="my-6 font-mono text-zinc-300 md:w-[500px]">
-            👋 Olá! Sou{" "}
-            <span className="font-semibold text-white">Willyan Costa</span>,
-            desenvolvedor front-end com mais de 1 ano de experiência, atualmente
-            mergulhando no universo full-stack. Apaixonado por tecnologia, estou
-            sempre em busca de novos desafios e oportunidades para expandir meus
-            conhecimentos. Estou em constante aprendizado, explorando novas
-            tecnologias e aprimorando minhas habilidades para oferecer soluções
-            inovadoras e eficientes. Vamos criar algo incrível juntos? 🚀
-          </span>
+          <div className="font-mono">
+            <RichText content={pageData.description.raw} />
+          </div>
+
           <div className="mb-6 flex flex-wrap gap-1 md:mb-0 md:gap-3">
-            <Badge>React</Badge>
-            <Badge>Next.js</Badge>
-            <Badge>TailwindCSS</Badge>
-            <Badge>JavaScript</Badge>
-            <Badge>TypeScript</Badge>
-            <Badge>Prisma</Badge>
-            <Badge>Node.js</Badge>
-            <Badge>HTML5</Badge>
-            <Badge>CSS3</Badge>
+            {pageData.skill.map((item) => (
+              <Badge key={item.name}>{item.name}</Badge>
+            ))}
+            
           </div>
           <div className="flex flex-col gap-2 md:flex-row md:gap-3">
             <Link
@@ -59,7 +52,7 @@ export default function About() {
         </div>
         <div>
           <Image
-            src="/perfil.png"
+            src={pageData.profilePerfil.url}
             alt="imagem de perfil"
             width={350}
             height={350}
