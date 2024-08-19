@@ -34,7 +34,6 @@ export default async function About() {
             {pageData.skill.map((item) => (
               <Badge key={item.name}>{item.name}</Badge>
             ))}
-            
           </div>
           <div className="flex flex-col gap-2 md:flex-row md:gap-3">
             <Link

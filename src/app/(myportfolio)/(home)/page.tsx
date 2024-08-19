@@ -4,7 +4,7 @@ import InitialSection from "../initial/page";
 import Project from "../projetos/page";
 import About from "../sobre/page";
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <div>
       <HeaderPage />

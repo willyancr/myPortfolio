@@ -14,6 +14,24 @@ export const getPageData = async (): Promise<AboutPageData> => {
     profilePerfil {
       url
     }
+    highlightProjects {
+      slug
+      imageProject {
+        url
+      }
+      titleProject
+      descriptonProject {
+        raw
+      }
+      descriptonProjectFull {
+        raw
+      }
+      gitHubUrl
+      deployUrl
+      skill {
+        name
+      }
+    }
   }
 }
   `;
