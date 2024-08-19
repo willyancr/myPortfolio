@@ -4,6 +4,23 @@ export interface SkillInfo {
   name: string;
 }
 
+export interface Project {
+  slug: string;
+  imageProject: {
+    url: string;
+  };
+  titleProject: string;
+  descriptonProject: {
+    raw: RichTextContent;
+  };
+  descriptonProjectFull: {
+    raw: RichTextContent;
+  };
+  gitHubUrl: string;
+  deployUrl: string;
+  skill: SkillInfo[];
+}
+
 export interface AboutPageInfo {
   description: {
     raw: RichTextContent;
@@ -12,24 +29,7 @@ export interface AboutPageInfo {
   profilePerfil: {
     url: string;
   };
-  highlightProjects: [
-    {
-      slug: string;
-      imageProject: {
-        url: string;
-      };
-      titleProject: string;
-      descriptonProject: {
-        raw: RichTextContent;
-      };
-      descriptonProjectFull: {
-        raw: RichTextContent;
-      };
-      gitHubUrl: string;
-      deployUrl: string;
-      skill: SkillInfo[];
-    },
-  ];
+  highlightProjects: Project[];
 }
 
 export interface AboutPageData {

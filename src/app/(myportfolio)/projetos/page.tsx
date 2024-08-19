@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 
 export default async function Project() {
   const { page: pageData } = await getPageData();
+  console.log(pageData);
   return (
     <div id="projetos" className="container space-y-20 pb-20 pt-28">
       <h1 className="font-mono text-4xl">
@@ -15,7 +16,11 @@ export default async function Project() {
         Projetos
       </h1>
       <div className="flex flex-wrap items-center justify-center gap-10">
-        <CardsProjetos projectData={pageData} />
+        {pageData.highlightProjects?.map((project) => (
+          <div key={project.slug}>
+            <CardsProjetos project={project} />
+          </div>
+        ))}
       </div>
     </div>
   );

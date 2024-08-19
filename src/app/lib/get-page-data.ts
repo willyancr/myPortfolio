@@ -26,11 +26,11 @@ export const getPageData = async (): Promise<AboutPageData> => {
       descriptonProjectFull {
         raw
       }
-      gitHubUrl
-      deployUrl
       skill {
         name
       }
+      gitHubUrl
+      deployUrl
     }
   }
 }

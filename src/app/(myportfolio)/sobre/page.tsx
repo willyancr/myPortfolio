@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 
 export default async function About() {
   const { page: pageData } = await getPageData();
-
   return (
     <div id="sobre" className="container space-y-10 pb-24 pt-28 md:space-y-20">
       <h1 className="font-mono text-4xl">
@@ -30,7 +29,7 @@ export default async function About() {
             <RichText content={pageData.description.raw} />
           </div>
 
-          <div className="mb-6 flex flex-wrap gap-1 md:mb-0 md:gap-3">
+          <div className="mb-6 flex flex-wrap gap-1 md:mb-0 md:gap-2">
             {pageData.skill.map((item) => (
               <Badge key={item.name}>{item.name}</Badge>
             ))}

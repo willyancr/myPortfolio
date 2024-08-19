@@ -1,7 +1,7 @@
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, ComponentProps } from "react";
 import { cn } from "../lib/utilis";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
+interface ButtonProps extends ComponentProps<"button"> {}
 
 export default function Button({ children, className, ...props }: ButtonProps) {
   return (
