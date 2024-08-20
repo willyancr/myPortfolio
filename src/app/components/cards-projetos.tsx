@@ -18,7 +18,7 @@ export default function CardsProjetos({ project }: { project: Project }) {
   const handleCloseModalCard = () => setModalCard(false);
 
   return (
-    <div className="shadowCards relative h-[420px] w-[287px] rounded-3xl bg-cards p-3 shadow-xl transition duration-300">
+    <div className="shadowCards relative h-[445px] w-[287px] rounded-3xl bg-cards p-3 shadow-xl transition duration-300">
       <div className="flex flex-col gap-2">
         <div className="relative w-full">
           <button onClick={handleModalCard}>
@@ -37,7 +37,7 @@ export default function CardsProjetos({ project }: { project: Project }) {
 
         <span>{project.titleProject}</span>
 
-        <span className="h-[60px] overflow-hidden text-sm text-gray-400">
+        <span className="h-[75px] overflow-hidden text-sm text-gray-400">
           <RichText content={project.descriptonProject.raw} />
         </span>
 
@@ -47,7 +47,7 @@ export default function CardsProjetos({ project }: { project: Project }) {
           ))}
         </div>
 
-        <div className="flex gap-2 text-sm text-gray-400">
+        <div className="absolute bottom-3 flex gap-2 text-sm text-gray-400">
           <button className="flex items-center gap-2 rounded-md bg-[#101921]/70 p-2 transition duration-300 hover:bg-[#101921] hover:text-green-400">
             <FaGithub />
             <a href={project.gitHubUrl} target="_blank" rel="noreferrer">

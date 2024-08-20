@@ -1,8 +1,10 @@
 "use client";
 import Button from "@/app/components/button";
 import RedirectMidiaSocial from "@/app/components/redirect-midia-social";
+import { leftAnimation, scaleAnimation } from "@/app/lib/animation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
+import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import {
@@ -47,11 +49,12 @@ export default function Contact() {
         Contato
       </h1>
       <div className="flex flex-col space-y-12 text-center">
-        <div className="text-3xl font-medium">
+        <motion.div {...leftAnimation} className="text-3xl font-medium">
           <p>Vamos trabalhar juntos?</p>
           <p>Entre em contato comigo!</p>
-        </div>
-        <form
+        </motion.div>
+        <motion.form
+          {...scaleAnimation}
           onSubmit={handleSubmit(handleSubmitForm)}
           className="flex flex-col gap-2"
         >
@@ -98,7 +101,7 @@ export default function Contact() {
               <FaInstagram className="size-5" />
             </RedirectMidiaSocial>
           </div>
-        </form>
+        </motion.form>
       </div>
     </div>
   );

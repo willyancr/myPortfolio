@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   FaGithub,
   FaInstagram,
@@ -7,7 +8,13 @@ import {
 
 export default function SideBarSocial() {
   return (
-    <div className="hidden sm:flex sm:h-[800px]">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.5 }}
+      transition={{ duration: 0.5 }}
+      className="hidden sm:flex sm:h-[800px]"
+    >
       <aside className="flex min-w-16 flex-col-reverse gap-6 pl-3 sm:flex">
         <a
           href="https://x.com/WillyanCosta"
@@ -38,6 +45,6 @@ export default function SideBarSocial() {
           <FaLinkedinIn className="size-5" />
         </a>
       </aside>
-    </div>
+    </motion.div>
   );
 }
