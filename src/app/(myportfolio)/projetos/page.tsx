@@ -1,4 +1,3 @@
-"use client";
 import CardsProjetos from "@/app/components/cards-projetos";
 import { Project } from "@/app/types/page-infos";
 import { motion } from "framer-motion";
