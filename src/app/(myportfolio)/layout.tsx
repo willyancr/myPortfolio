@@ -1,4 +1,4 @@
-import ToasterProvider from "../provaider/toaster";
+import ToasterProvider from "../provider/toaster";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

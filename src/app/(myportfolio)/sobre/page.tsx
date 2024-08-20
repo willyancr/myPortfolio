@@ -1,15 +1,13 @@
 "use client";
 import Badge from "@/app/components/badge";
 import Button from "@/app/components/button";
-import { RichText } from "@/app/components/rich-text";
 import { leftAnimation, scaleAnimation } from "@/app/lib/animation";
-import { AboutPageInfo } from "@/app/types/page-infos";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { FaDownload, FaPaperPlane } from "react-icons/fa6";
 
-export default function About({ aboutInfo }: { aboutInfo: AboutPageInfo }) {
+export default function About() {
   return (
     <div id="sobre" className="container space-y-10 pb-24 pt-28 md:space-y-20">
       <h1 className="font-mono text-4xl">
@@ -24,22 +22,26 @@ export default function About({ aboutInfo }: { aboutInfo: AboutPageInfo }) {
               <h2 className="font-rubik text-4xl">Willyan Costa</h2>
             </div>
             <div className="font-mono">
-              <RichText content={aboutInfo.description.raw} />
+              👋 Olá! Sou Willyan Costa, desenvolvedor front-end com mais de 1
+              ano de experiência, atualmente mergulhando no universo full-stack.
+              Apaixonado por tecnologia, estou sempre em busca de novos desafios
+              e oportunidades para expandir meus conhecimentos. Estou em
+              constante aprendizado, explorando novas tecnologias e aprimorando
+              minhas habilidades para oferecer soluções inovadoras e eficientes.
+              Vamos criar algo incrível juntos? 🚀
             </div>
           </motion.div>
 
           <div className="mb-6 flex flex-wrap gap-1 md:mb-0 md:gap-2">
-            {aboutInfo.skill.map((item, i) => (
-              <Badge
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0 }}
-                transition={{ duration: 0.2, delay: i * 0.1 }}
-                key={item.name}
-              >
-                {item.name}
-              </Badge>
-            ))}
+            <Badge>React</Badge>
+            <Badge>Next.js</Badge>
+            <Badge>TailwindCSS</Badge>
+            <Badge>JavaScript</Badge>
+            <Badge>TypeScript</Badge>
+            <Badge>Prisma</Badge>
+            <Badge>Node.js</Badge>
+            <Badge>HTML5</Badge>
+            <Badge>CSS3</Badge>
           </div>
           <div className="flex flex-col gap-2 md:flex-row md:gap-3">
             <Link
@@ -60,7 +62,7 @@ export default function About({ aboutInfo }: { aboutInfo: AboutPageInfo }) {
           className="flex items-center justify-center"
         >
           <Image
-            src={aboutInfo.profilePerfil.url}
+            src="/perfil.png"
             alt="imagem de perfil"
             width={350}
             height={350}
