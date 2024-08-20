@@ -1,9 +1,9 @@
 "use client";
 import CardsProjetos from "@/app/components/cards-projetos";
-import { Project as ProjectProps } from "@/app/types/page-infos";
+import { Project } from "@/app/types/page-infos";
 import { motion } from "framer-motion";
 
-export default function Project({ projects }: { projects: ProjectProps[] }) {
+export default function ProjectPage({ projects }: { projects: Project[] }) {
   return (
     <div id="projetos" className="container space-y-20 pb-20 pt-28">
       <h1 className="font-mono text-4xl">
