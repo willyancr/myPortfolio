@@ -12,6 +12,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaPaperPlane,
+  FaWhatsapp,
   FaXTwitter,
 } from "react-icons/fa6";
 import * as z from "zod";
@@ -99,6 +100,9 @@ export default function Contact() {
             </RedirectMidiaSocial>
             <RedirectMidiaSocial href="https://www.instagram.com/willyan.cr/">
               <FaInstagram className="size-5" />
+            </RedirectMidiaSocial>
+            <RedirectMidiaSocial href="https://wa.me/5563984533367">
+              <FaWhatsapp className="size-5" />
             </RedirectMidiaSocial>
           </div>
         </motion.form>
