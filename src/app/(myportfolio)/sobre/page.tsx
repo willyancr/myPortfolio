@@ -33,15 +33,19 @@ export default function About() {
           </motion.div>
 
           <div className="mb-6 flex flex-wrap gap-1 md:mb-0 md:gap-2">
-            <Badge>React</Badge>
-            <Badge>Next.js</Badge>
-            <Badge>TailwindCSS</Badge>
-            <Badge>JavaScript</Badge>
-            <Badge>TypeScript</Badge>
-            <Badge>Prisma</Badge>
-            <Badge>Node.js</Badge>
-            <Badge>HTML5</Badge>
-            <Badge>CSS3</Badge>
+            {[
+              "React",
+              "Next.js",
+              "TailwindCSS",
+              "JavaScript",
+              "TypeScript",
+              "Prisma",
+              "Node.js",
+              "HTML5",
+              "CSS3",
+            ].map((tech) => (
+              <Badge key={tech}>{tech}</Badge>
+            ))}
           </div>
           <div className="flex flex-col gap-2 md:flex-row md:gap-3">
             <Link
@@ -52,8 +56,14 @@ export default function About() {
               <FaPaperPlane className="size-4 text-zinc-900" />
             </Link>
             <Button>
-              <p className="text-zinc-950">Download C.V </p>
-              <FaDownload className="size-4 text-zinc-900" />
+              <a
+                href="https://drive.google.com/file/d/16HGIhuRbxcvd5yAHbHAbHfyJ58H9Xc5B/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="text-zinc-950">Download C.V </p>
+                <FaDownload className="size-4 text-zinc-900" />
+              </a>
             </Button>
           </div>
         </div>
