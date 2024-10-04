@@ -60,6 +60,7 @@ export default function About() {
                 href="https://drive.google.com/file/d/16HGIhuRbxcvd5yAHbHAbHfyJ58H9Xc5B/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2"
               >
                 <p className="text-zinc-950">Download C.V </p>
                 <FaDownload className="size-4 text-zinc-900" />
