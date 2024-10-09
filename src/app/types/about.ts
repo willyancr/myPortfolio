@@ -1,19 +1,25 @@
-import type { RichTextContent } from "@graphcms/rich-text-types";
+type Child = {
+  bold?: boolean;
+  text: string;
+  type: string;
+};
 
-export interface SkillInfo {
-  name: string;
-}
+type Descricao = {
+  children: Child[];
+};
 
-export interface AboutPageInfo {
-  description: {
-    raw: RichTextContent;
-  };
-  skill: SkillInfo[];
-  profilePhoto: {
-    url: string;
-  };
-}
+type Badge = {
+  id: number;
+  skill: string;
+};
 
-export interface AboutPageData {
-  about: AboutPageInfo;
+type Foto = {
+  url: string;
+};
+export type DataAbout = {
+  id: number;
+  descricao: Descricao[];
+  badge: Badge[];
+  linkCV: string;
+  fotoPerfil: Foto;
 }
