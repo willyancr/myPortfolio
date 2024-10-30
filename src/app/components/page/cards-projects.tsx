@@ -47,7 +47,7 @@ export default function CardsProjects() {
               <div className="relative w-full text-center">
                 <button onClick={() => handleModalCard(project.id)}>
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_URL_IMAGE}${project.capa.url}`}
+                    src={project.capa.url}
                     alt="imagem da aplicação"
                     width={500}
                     height={500}

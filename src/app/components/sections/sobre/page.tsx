@@ -86,7 +86,7 @@ export default function About() {
             className="flex items-center justify-center"
           >
             <Image
-              src={`${process.env.NEXT_PUBLIC_URL_IMAGE}${item.fotoPerfil.url}`}
+              src={item.fotoPerfil.url}
               alt="imagem de perfil"
               width={350}
               height={350}

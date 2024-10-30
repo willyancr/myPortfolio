@@ -8,7 +8,10 @@ interface Props {
   data: DataProject;
 }
 
-export default function ModalCardProject({ handleCloseModalCard, data }: Props) {
+export default function ModalCardProject({
+  handleCloseModalCard,
+  data,
+}: Props) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 text-zinc-300">
       <div className="modalEffect h-[580px] w-[380px] space-y-6 overflow-y-auto rounded-xl bg-cards px-6 py-5 text-left drop-shadow-2xl sm:h-[840px] sm:w-[740px]">
@@ -19,7 +22,7 @@ export default function ModalCardProject({ handleCloseModalCard, data }: Props) 
           </button>
         </div>
         <Image
-          src={`${process.env.NEXT_PUBLIC_URL_IMAGE}${data.capa.url}`}
+          src={data.capa.url}
           alt="imagem da aplicação Tripplan"
           width={740}
           height={540}
