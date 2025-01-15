@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["strapiportfolio-willyan.up.railway.app"],
+    domains: ["strapi-portfolio-wcr.fly.dev"],
     domains: ["res.cloudinary.com"],
   },
 };
